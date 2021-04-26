@@ -32,7 +32,7 @@ mongoose.connect(url,mongooseDbOption);   //ready to connect
 
 //Connect the data 
 mongoose.connection
-
+console.log(mongoose.connection.readyState);
 //link to router module like a import concept. 
 var Product = require("./router/product.router.js");
 
